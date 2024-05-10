@@ -1,0 +1,251 @@
+:root{
+    --salmon : #F98F7D;
+    --blue : #4B99E5;
+    --lightblue: #01D4FF;
+    --darkblue: #0153A1;
+
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    width: 100%;
+    height: 50px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header h1{
+    text-align: center;
+}
+div.app{
+    width: 400px;
+    height: 600px;
+    margin: auto;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: black;
+    box-shadow: 5px 5px 5px darkgrey;
+    border: 5px double lightgray;
+    /* border: 5px medium */
+
+}
+div.border{
+    width: 100%;
+    height: 100%;
+    border: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: lightgrey;
+}
+div.speaker{
+    background-color: gray;
+    width: 20%;
+    height: 10px;
+    border-radius: 5px;
+}
+div.homebutton{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+div.homebutton button{
+    background-color: grey;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    box-shadow: inset 0px 0px 10px black;
+}
+div.homebutton button:active{
+    box-shadow: inset 0px 0px 20px black;
+}
+
+div.detail{
+    width: 100%;
+    height: 35%;
+    background-color: lightgrey;
+}
+div.type{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+}
+div.type button{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    font-size: larger;
+    border: none;
+    background-color: var(--blue);
+    box-shadow: 3px 3px 5px gray;
+}
+/* div.type button:focus{
+    background-color: salmon;
+    box-shadow: 1px -1px 5px gray;
+} */
+.focus{
+    background-color: salmon;
+    box-shadow: 1px -1px 5px gray;
+}
+div.input{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 10px;
+    gap: 10px;
+    
+}
+div.label{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    font-size: larger;
+}
+div.label label:first-child{
+    width: 70%;
+    font-size: larger;
+}
+div.label label:last-child{
+    width: 30%;
+    font-size: larger;
+    
+}
+div.inputfield{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100% ;
+    gap: 10px;
+}
+div.inputfield input:first-child{
+    width: 70%;
+    font-size: x-large;
+    padding: 5px;
+    color: var(--darkblue);
+    }
+    div.inputfield input:last-child{
+        width: 30%;
+        font-size: x-large;
+        padding: 5px;
+        color: var(--darkblue);
+}
+div.submit{
+    width: 100%;
+    height: 15%;
+
+    background-color: lightgrey;
+
+}
+div.submit button{
+    width: 50%;
+    height: 60%;
+    font-size: larger;
+    border-radius: 10px;
+    background-color: var(--blue);
+    box-shadow: 1px 1px 5px gray;
+    border: none;
+}
+div.submit button:active, button:focus{
+    background-color: salmon;
+    box-shadow: 0px 0px 2px dark;
+
+}
+
+div.screen{
+    width: 100%;
+    height: 300px;
+    background-color: darkgray;
+    border: 10px solid lightgray;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+div.screen p{
+    border: 0.5px solid black;
+    min-height: 40px;
+    width: 100%;
+    padding: 0px 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: black;
+}
+div.screen p > span.textfield{
+    width: 50%;
+    font-weight: bold;
+    font-size: filarge;
+}
+div.screen p > span.amount{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-between;
+}
+span.current{
+    font-weight: bold;
+}
+span.total{
+    font-weight: bold;
+    font-size: large;
+}
+
+
+
+
+.flex-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.d-row{
+    flex-direction: row;
+}
+.d-column{
+    flex-direction: column;
+}
+.salmon{
+    background: linear-gradient(to right, salmon, skyblue);
+}
+.skyblue{
+    background: linear-gradient(to left, salmon, skyblue);
+}

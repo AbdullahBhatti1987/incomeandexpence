@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Income and Expences App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Income and Expense App</h1>
+    </header>
+    <div class="app">
+        <div class="speaker"></div>
+        <div class="border">
+            <div class="screen" id="screen">
+                <!-- <p id="entry" class="entry">
+                    <span class="textfield" id="textview"></span>
+                    <span class="amount" id="amountview">
+                        <span class="current" id="currentview">0</span>
+                        <span class="total" id="totalview">0</span>
+                    </span>
+                </p> -->
+            </div>
+            <div class="detail">
+                <div class="type flex-box d-row ">
+                    <button type="button" id="incomebutton" value="incomebutton" onclick="incomeBtn()">Income</button>
+                    <button type="button" id="expensebutton" value="expensebutton" onclick="expenseBtn()">Expense</button>
+                </div>
+                <div class="input">
+                    <div class="label">
+                        <label for="detailtext">Enter your</label>
+                        <label for="amount">Amount</label>
+                    </div>
+                    <div class="inputfield">
+                        <input type="text" maxlength="15" id="detailtext" name="income" placeholder="Income/Expence">
+                        <input type="text" maxlength="6" id="amount" name="expense">
+                    </div>
+                </div>
+            </div>
+            <div class="submit flex-box d-column">
+                <button type="button" onclick="save()">Save</button>
+            </div>
+
+        </div>
+        <div class="homebutton">
+            <button type="button" onclick="reset()"></button>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
