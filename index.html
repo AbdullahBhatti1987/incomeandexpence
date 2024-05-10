@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Income and Expences App</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/670d8593df.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -15,7 +16,7 @@
     </header>
     <div class="app">
         <div class="speaker"></div>
-        <div class="border">
+        <div class="border" id="border">
             <div class="screen" id="screen">
                 <!-- <p id="entry" class="entry">
                     <span class="textfield" id="textview"></span>
@@ -25,10 +26,11 @@
                     </span>
                 </p> -->
             </div>
-            <div class="detail">
+            <div class="detail" id="detail1">
                 <div class="type flex-box d-row ">
                     <button type="button" id="incomebutton" value="incomebutton" onclick="incomeBtn()">Income</button>
-                    <button type="button" id="expensebutton" value="expensebutton" onclick="expenseBtn()">Expense</button>
+                    <button type="button" id="expensebutton" value="expensebutton"
+                        onclick="expenseBtn()">Expense</button>
                 </div>
                 <div class="input">
                     <div class="label">
@@ -36,12 +38,12 @@
                         <label for="amount">Amount</label>
                     </div>
                     <div class="inputfield">
-                        <input type="text" maxlength="15" id="detailtext" name="income" placeholder="Income/Expence">
-                        <input type="text" maxlength="6" id="amount" name="expense">
+                        <input type="text" maxlength="15" id="detailtext" name="text" placeholder="Income/Expence">
+                        <input type="text" maxlength="6" id="amount" name="amount">
                     </div>
                 </div>
             </div>
-            <div class="submit flex-box d-column">
+            <div class="submit flex-box d-column" id="submit1">
                 <button type="button" onclick="save()">Save</button>
             </div>
 

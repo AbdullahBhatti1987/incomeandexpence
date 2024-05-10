@@ -1,4 +1,14 @@
 :root{
+    --medium : #F0E5CF;
+    --light : #F7F6F2;
+    --mediumdark : #C8C6C6;
+    --dark : #4B6587;
+    
+    --dark1 : #96B6C5;
+    --mediumdark1 : #ADC4CE;
+    --medium1 : #EEE0C9;
+    --light1 : #F1F0E8;
+
     --salmon : #F98F7D;
     --blue : #4B99E5;
     --lightblue: #01D4FF;
@@ -8,6 +18,7 @@
 body{
     margin: 0px;
     padding: 0px;
+    background: linear-gradient(to right, var(--dark1), var(--medium1));
 }
 *{
     box-sizing: border-box;
@@ -17,7 +28,7 @@ body{
 
 header{
     width: 100%;
-    height: 50px;
+    height: 70px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -26,6 +37,12 @@ header{
 }
 header h1{
     text-align: center;
+    color: var(--dark);
+    width: 400px;
+    padding: 5px;
+    border: 1px solid var(--dark);
+    box-shadow: 0px 0px 5px black;
+    border-radius: 10px;
 }
 div.app{
     width: 400px;
@@ -39,11 +56,9 @@ div.app{
     gap: 10px;
     padding: 10px;
     border-radius: 20px;
-    background-color: black;
-    box-shadow: 5px 5px 5px darkgrey;
+    background: linear-gradient(to left, var(--medium1), var(--light1), var(--medium1));
+    box-shadow: 10px 5px 15px black;
     border: 5px double lightgray;
-    /* border: 5px medium */
-
 }
 div.border{
     width: 100%;
@@ -53,12 +68,11 @@ div.border{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 10px;
-    background-color: lightgrey;
+    background: linear-gradient(to left, var(--dark1), var(--medium1));
 }
 div.speaker{
-    background-color: gray;
-    width: 20%;
+    background-color: black;
+    width: 10px;
     height: 10px;
     border-radius: 5px;
 }
@@ -69,22 +83,10 @@ div.homebutton{
     align-items: center;
     justify-content: center;
 }
-div.homebutton button{
-    background-color: grey;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border: none;
-    box-shadow: inset 0px 0px 10px black;
-}
-div.homebutton button:active{
-    box-shadow: inset 0px 0px 20px black;
-}
 
 div.detail{
     width: 100%;
     height: 35%;
-    background-color: lightgrey;
 }
 div.type{
     width: 100%;
@@ -95,6 +97,7 @@ div.type{
     align-items: center;
     padding: 10px;
     gap: 10px;
+    background-color: var(--dark1);
 }
 div.type button{
     width: 100%;
@@ -102,15 +105,19 @@ div.type button{
     border-radius: 10px;
     font-size: larger;
     border: none;
-    background-color: var(--blue);
-    box-shadow: 3px 3px 5px gray;
+    background: var(--dark);
+    color: var(--mediumdark1);
+    text-shadow: 2px 2px 5px var(--dark);
+    box-shadow: 2px 2px 5px var(--dark);
 }
-/* div.type button:focus{
-    background-color: salmon;
-    box-shadow: 1px -1px 5px gray;
-} */
+div.type button:disabled{
+    color: var(--dark);
+    background: var(--mediumdark1);
+    text-shadow: 2px 2px 5px var(--dark);
+    box-shadow: 0px 0px 5px gray;
+}
 .focus{
-    background-color: salmon;
+    background-color: green;
     box-shadow: 1px -1px 5px gray;
 }
 div.input{
@@ -123,7 +130,7 @@ div.input{
     margin: auto;
     padding: 10px;
     gap: 10px;
-    
+    background-color: var(--dark1);
 }
 div.label{
     width: 100%;
@@ -133,6 +140,9 @@ div.label{
     align-items: center;
     gap: 10px;
     font-size: larger;
+    color: var(--dark);
+    text-shadow: 1px 1px 1px black;
+    background-color: var(--dark1);
 }
 div.label label:first-child{
     width: 70%;
@@ -151,56 +161,59 @@ div.inputfield{
     width: 100%;
     height: 100% ;
     gap: 10px;
+    /* background-color: var(--dark1); */
 }
 div.inputfield input:first-child{
     width: 70%;
     font-size: x-large;
     padding: 5px;
-    color: var(--darkblue);
-    }
+    background-color: var(--medium1);
+    color: var(--dark);    
+}
     div.inputfield input:last-child{
         width: 30%;
         font-size: x-large;
         padding: 5px;
-        color: var(--darkblue);
-}
+        background-color: var(--medium1);
+        color: var(--dark);    
+        }
 div.submit{
     width: 100%;
     height: 15%;
-
-    background-color: lightgrey;
-
+    background-color: var(--dark1);
 }
 div.submit button{
     width: 50%;
     height: 60%;
     font-size: larger;
     border-radius: 10px;
-    background-color: var(--blue);
+    color: var(--mediumdark1);
     box-shadow: 1px 1px 5px gray;
     border: none;
-}
-div.submit button:active, button:focus{
-    background-color: salmon;
-    box-shadow: 0px 0px 2px dark;
+    text-shadow: 2px 2px 5px var(--dark);
+    background: var(--dark);
 
+}
+div.submit button:focus, button:active{
+    background-color: var(--mediumdark1);
+    color: var(--dark);
+    text-shadow: 2px 2px 5px var(--dark);
+    box-shadow: 0px 0px 5px gray;
 }
 
 div.screen{
     width: 100%;
     height: 300px;
-    background-color: darkgray;
-    border: 10px solid lightgray;
+    border: 1px solid gray;
     overflow-y: scroll;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-
+    /* background-color: var(--dark1); */
 }
 div.screen p{
-    border: 0.5px solid black;
-    min-height: 40px;
+    min-height: 35px;
     width: 100%;
     padding: 0px 10px;
     display: flex;
@@ -212,7 +225,7 @@ div.screen p{
 div.screen p > span.textfield{
     width: 50%;
     font-weight: bold;
-    font-size: filarge;
+    font-size: larger;
 }
 div.screen p > span.amount{
     width: 50%;
@@ -230,7 +243,17 @@ span.total{
 }
 
 
-
+div.homebutton button{
+    background-color: var(--light1);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px ridge var(--light1);
+    box-shadow: inset 0px 0px 3px black;
+}
+div.homebutton button:active{
+    box-shadow: inset 0px 0px 5px black;
+}
 
 .flex-box{
     display: flex;
@@ -243,9 +266,23 @@ span.total{
 .d-column{
     flex-direction: column;
 }
-.salmon{
-    background: linear-gradient(to right, salmon, skyblue);
+.profit{
+    background: linear-gradient(to left, var(--medium1), var(--dark));
 }
-.skyblue{
-    background: linear-gradient(to left, salmon, skyblue);
+.lose{
+    background: linear-gradient(to right, var(--medium1), var(--dark));
+
+}
+
+.profitFont{
+    color: darkgreen;
+}
+.loseFont{
+    color: red;
+}
+div.border{
+    background-image: url(./images/bg.avif)!important;
+    background-repeat: no-repeat!important;
+    background-size: cover!important;
+    background-position: center!important;
 }
