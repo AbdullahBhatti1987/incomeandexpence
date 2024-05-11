@@ -91,18 +91,20 @@ function nextentry() {
     s4Element.id = "totalview";
     s2Element.appendChild(s4Element);
     totalSavings = totalIncomes - totalExpenses;
-    s4Element.innerText = totalSavings;
-    if(totalSavings > 0){
+    if(totalSavings >= 1){
         s4Element.style.color = 'green';
-    } else{
+        console.log('==>' + totalSavings + 'green1')
+      } else{
         s4Element.style.color = 'red';
+        console.log('==>' + totalSavings + 'red1')
     }
+    s4Element.innerText = totalSavings;
   } else if (buttonExpense.disabled == true) {
     var pElelement = document.createElement("p");
     pElelement.className = "entry lose";
     pElelement.id = "entry";
     newEntry.appendChild(pElelement);
-
+    
     var s1Element = document.createElement("span");
     s1Element.className = "textfield";
     s1Element.id = "textview";
@@ -129,11 +131,13 @@ function nextentry() {
     s4Element.id = "totalview";
     s2Element.appendChild(s4Element);
     totalSavings = totalIncomes - totalExpenses;
-    s4Element.innerText = totalSavings;
-    if(totalSavings < 0){
-        s4Element.style.color = 'red';
+    console.log('==>'+totalSavings);
+    if(totalSavings >= 1){
+      s4Element.style.color = 'green';
+      console.log('==>' + totalSavings + 'green1')
+    } else{
+      s4Element.style.color = 'red';
+      console.log('==>' + totalSavings + 'red1')
     }
-  } else {
-    s4Element.style.color = 'green';
-  }
-}
+    s4Element.innerText = totalSavings;
+  }}

@@ -210,7 +210,6 @@ div.screen{
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    /* background-color: var(--dark1); */
 }
 div.screen p{
     min-height: 35px;
@@ -220,7 +219,7 @@ div.screen p{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    color: black;
+    /* color: black; */
 }
 div.screen p > span.textfield{
     width: 50%;
@@ -240,8 +239,8 @@ span.current{
 span.total{
     font-weight: bold;
     font-size: large;
+    border-bottom: 1px solid black;
 }
-
 
 div.homebutton button{
     background-color: var(--light1);
@@ -270,8 +269,7 @@ div.homebutton button:active{
     background: linear-gradient(to left, var(--medium1), var(--dark));
 }
 .lose{
-    background: linear-gradient(to right, var(--medium1), var(--dark));
-
+    background: linear-gradient(to left, var(--medium1), var(--dark));
 }
 
 .profitFont{
